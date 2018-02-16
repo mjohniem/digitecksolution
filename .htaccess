@@ -1,0 +1,41 @@
+RewriteEngine On    # Turn on the rewriting engine 
+
+RewriteRule    ^admin/?$    admin/index.php    [NC,L]   
+
+RewriteRule    ^pages/([A-Za-z0-9-]+)/?$    pages.php?name=$1    [NC,L] 
+
+
+RewriteRule    ^category/([([0-9]+)/(.*)$    cat-grid-main.php?id=$1    [NC,L]
+RewriteRule    ^category/([([0-9]+)/?$    cat-grid-main.php?id=$1    [NC,L]
+
+
+RewriteRule    ^subcategory/([([0-9]+)/(.*)$    cat-grid-sub.php?id=$1    [NC,L]
+RewriteRule    ^subcategory/([([0-9]+)/?$    cat-grid-sub.php?id=$1    [NC,L]
+
+
+RewriteRule    ^childcategory/([([0-9]+)/(.*)$    cat-grid-child.php?id=$1    [NC,L]
+RewriteRule    ^childcategory/([([0-9]+)/?$    cat-grid-child.php?id=$1    [NC,L]
+
+
+RewriteRule    ^product/([([0-9]+)/(.*)$    product.php?id=$1    [NC,L]
+RewriteRule    ^product/([([0-9]+)/?$    product.php?id=$1    [NC,L]
+
+
+RewriteRule    ^menu/([([0-9]+)/(.*)$    menu.php?id=$1    [NC,L]
+RewriteRule    ^menu/([([0-9]+)/?$    menu.php?id=$1    [NC,L]
+
+
+RewriteRule    ^order/([([0-9]+)/?$    order.php?id=$1    [NC,L]
+
+
+RewriteRule    ^signin/?$    signin.php    [NC,L]   
+RewriteRule    ^signup/?$    signup.php    [NC,L]   
+RewriteRule    ^signout/?$    signout.php    [NC,L]   
+RewriteRule    ^cart/?$    cart.php    [NC,L]   
+RewriteRule    ^checkout/?$    checkout.php    [NC,L]   
+
+RewriteRule    ^dashboard/?$    u-dashboard.php    [NC,L]   
+RewriteRule    ^myorder/?$    u-myorder.php    [NC,L]   
+RewriteRule    ^updateprofile/?$    u-updateprofile.php    [NC,L]   
+RewriteRule    ^changepassword/?$    u-changepassword.php    [NC,L]   
+
